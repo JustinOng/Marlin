@@ -522,7 +522,7 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -544,10 +544,9 @@
   // #define DEFAULT_bedKi .023
   // #define DEFAULT_bedKd 305.4
 
-  // TEVO Tarantula Custom PID Settings - Heatbed
-	#define  DEFAULT_bedKp 828.69
-	#define  DEFAULT_bedKi 162.12
-	#define  DEFAULT_bedKd 1058.97
+  #define DEFAULT_bedKp 62.33
+  #define DEFAULT_bedKi 12.27
+  #define DEFAULT_bedKd 211.04
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
